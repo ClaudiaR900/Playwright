@@ -1,4 +1,4 @@
-import { type Locator, type Page } from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 
 export class LoginPage {
   readonly page: Page;
@@ -13,12 +13,12 @@ export class LoginPage {
   }
 
   async goto() {
-    await this.page.goto(process.env.URL + "/auth/login");
+    await this.page.goto(`${process.env.URL}${process.env.LOGIN_PREFIX}`);
   }
 
-  async login(email: string, password: string) {
-    await this.emailInput.fill(email);
-    await this.passwordInput.fill(password);
+  async login(email?: string, password?: string) {
+    await this.emailInput.fill(email ?? process.env.USER_EMAIL ?? "");
+    await this.passwordInput.fill(password ?? process.env.USER_PASSWORD ?? "");
     await this.loginButton.click();
   }
 }

@@ -4,7 +4,7 @@ test("GET /products", async ({ request }) => {
   const apiUrl = "https://api.practicesoftwaretesting.com";
   const response = await request.get(apiUrl + "/products");
 
-  expect(response.status()).toBe(200);
+  expect(response.status()).toBe(200 * 1);
   const body = await response.json();
   expect(body.data.length).toBe(9);
   expect(body.total).toBe(50);

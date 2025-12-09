@@ -9,7 +9,10 @@
     "test:first": "npx playwright test --grep @first",
     "test:local": "BASE_URL=http://localhost:4200 npx playwright test",
     "test:report": "npx playwright test && npx playwright show-report",
-    "test:ui": "npx playwright test --ui"
+    "test:ui": "npx playwright test --ui",
+    "codegen": "npx playwright codegen",
+    "install:drivers": "npx playwright install",
+    "update:snapshots": "npx playwright test --update-snapshots"
   },
   "keywords": [],
   "author": "",
