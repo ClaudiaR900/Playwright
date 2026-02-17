@@ -5,10 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
+<<<<<<< HEAD
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:report": "npx playwright test && npx playwright show-report",
+    "test:debug": "npx playwright test --debug",
+    "test:trace": "npx playwright test --trace on",
+    "test:slow": "npx playwright test --slow-mo 1000",
+    "test:grep": "npx playwright test --grep @smoke",
+    "test:grep-invert": "npx playwright test --grep-invert @smoke",
+=======
     "test:chromium": "npx playwright test --project chromium",
     "test:first": "npx playwright test --grep @first",
     "test:local": "BASE_URL=http://localhost:4200 npx playwright test",
     "test:report": "npx playwright test && npx playwright show-report",
+>>>>>>> upstream/main
     "test:ui": "npx playwright test --ui"
   },
   "keywords": [],

@@ -48,6 +48,15 @@ export default defineConfig({
     {
       name: "chromium",
       dependencies: ["setup"],
+<<<<<<< HEAD
+      use: { ...devices['Desktop Chrome'], permissions: ["clipboard-read"] },
+    },
+    {
+      name: 'firefox',
+      dependencies: ["setup"],
+      use: { ...devices['Desktop Firefox'] },
+    }
+=======
       use: { ...devices["Desktop Chrome"], permissions: ["clipboard-read"] },
     },
     // {
@@ -55,6 +64,7 @@ export default defineConfig({
     //   dependencies: ["setup"],
     //   use: { ...devices['Desktop Firefox'] },
     // },
+>>>>>>> upstream/main
 
     // {
     //   name: 'webkit',
