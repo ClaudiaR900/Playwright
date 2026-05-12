@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Sprache & Ziel */
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+
+    /* Node + Playwright */
+    "types": ["node", "@playwright/test"],
+
+    /* Komfort & Kompatibilität */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+
+    /* Qualität */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Output (optional, da Playwright meist direkt TS nutzt) */
+    "outDir": "dist"
+  },
+
+  "include": [
+    "tests",
+    "playwright.config.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}

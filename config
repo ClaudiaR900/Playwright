@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[submodule]
+	active = .
+[remote "upstream"]
+	url = git@github.com:LinkedInLearning/learning-playwright-5911873.git
+[remote "origin"]
+	url = git@github.com:SebastianScherfQA/learning-playwright-5911873.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
